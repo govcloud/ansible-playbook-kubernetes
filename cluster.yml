@@ -124,3 +124,8 @@
   roles:
     - { role: kubespray-defaults}
     - { role: kubernetes-apps, tags: apps }
+
+- hosts: localhost
+  gather_facts: true
+  roles:
+    - { role: sa-helm }
