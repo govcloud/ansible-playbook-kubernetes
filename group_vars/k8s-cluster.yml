@@ -170,7 +170,7 @@ registry_enabled: false
 
 # Local volume provisioner deployment
 # deprecated will be removed
-local_volumes_enabled: false
+local_volumes_enabled: true
 local_volume_provisioner_enabled: "{{ local_volumes_enabled }}"
 
 # CephFS provisioner deployment
