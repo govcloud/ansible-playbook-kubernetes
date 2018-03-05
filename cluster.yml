@@ -5,6 +5,9 @@
     - { role: govcloud.kubernetes }
 
 - hosts: localhost
+  gather_facts: true
+
+- hosts: localhost
   gather_facts: False
   roles:
     - { role: kubespray-defaults}
