@@ -1,0 +1,10 @@
+---
+- shell: "mkdir /mnt/disks/{{ item }}"
+  become: true
+  with_items:
+    - "vol1"
+    - "vol2"
+    - "vol3"
+    - "vol4"
+    - "vol5"
+  register: pvc_mnt

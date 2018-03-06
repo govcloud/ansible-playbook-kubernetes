@@ -131,4 +131,4 @@
 - hosts: localhost
   gather_facts: true
   roles:
-    - { role: sa-helm }
+    - { role: local-storage }
