@@ -1,5 +1,5 @@
 ---
-- shell: "mkdir /mnt/disks/{{ item }}"
+- shell: "mkdir -p /mnt/disks/{{ item }}"
   become: true
   with_items:
     - "vol1"
