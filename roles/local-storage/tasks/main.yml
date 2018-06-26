@@ -8,3 +8,8 @@
     - "vol4"
     - "vol5"
   register: pvc_mnt
+
+- name: assign docker permission to user
+  become: true
+  shell: "usermod -a -G docker {{ authconfig_sssd_user }}"
+  ignore_errors: yes
